@@ -4,16 +4,21 @@ var title = new Title('Welcome to the Game'); // Create a title element
 var button = new Button('hello', btnPress);   // Create a button element
 var scr = new Text(score);                    // Create a text element
 
-createButton('Button', btnPress); // Make a button
+setInterval(btnPress, 1000);
+
+var button1 = new Button('Button', btnPress); // Make a button
 changeTitle('Clicker Game');
-createButton('button', btnPress);
+//createButton('button', btnPress);
+
+
 function btnpress(){
  score--;
  postToPage(score); 
 }
-setInterval(btnPress, 1000);
+
 
 function btnPress() {
   score++;
-  postToPage(score);
+  //postToPage(score);
+  scr.edit(score);
 }
