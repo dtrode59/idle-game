@@ -18,8 +18,6 @@ function btnPress() {
     hidden.hide(500);
   }
 }
-
-
 function btnPress() {
   score++;
   //postToPage(score);
