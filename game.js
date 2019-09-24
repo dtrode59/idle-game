@@ -9,14 +9,8 @@ var scr = new Text(score);                    // Create a text element
 setInterval(btnPress, 1000);
 
 function btnPress() {
-  score++;         // Increase the score
-  scr.edit(score); // Update the page with the new score
-  if(score > 10) {
-    hidden.show();
-  }
-  if(score > 15) {
-    hidden.hide(500);
-  }
+  score++;
+  scr.edit(score);
 }
 function btnPress() {
   score++;
