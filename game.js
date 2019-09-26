@@ -4,8 +4,7 @@ var title = new Title('Welcome to the Game'); // Create a title element
 var button = new Button('hello', btnPress);   // Create a button element
 var hidden = new Button('Boo!');
 hidden.hide();
-var scr = new Text(score);                    // Create a text element
-
+var scr = new Text(score); // Create a text element
 setInterval(btnPress, 1000);
 
 function btnPress() {
